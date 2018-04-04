@@ -8,10 +8,6 @@
 
 #import "HYTipsView.h"
 
-#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
-#define UIColorFromRGB_A(rgbValue, a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
-
 static const CGFloat kTextSpacing = 6;
 
 @interface HYTipsView ()
@@ -64,12 +60,12 @@ static const CGFloat kTextSpacing = 6;
     
     _bgView = [[UIView alloc] init];
     _bgView.layer.cornerRadius = 6;
-    _bgView.backgroundColor = UIColorFromRGB(0xffee79);
-    _bgView.layer.borderColor = UIColorFromRGB(0x6b4619).CGColor;
+    _bgView.backgroundColor = [UIColor colorWithRed:0xff/0xff green:0xee/0xff blue:0x79/0xff alpha:1]; //UIColorFromRGB(0xffee79);
+    _bgView.layer.borderColor = [UIColor colorWithRed:0x6b/0xff green:0x46/0xff blue:0x19/0xff alpha:1].CGColor;//UIColorFromRGB(0x6b4619).CGColor;
     _bgView.layer.borderWidth = 1;
     _bgView.layer.shadowOffset = CGSizeMake(2, 4);
     _bgView.layer.shadowOpacity = 1;
-    _bgView.layer.shadowColor = UIColorFromRGB(0x000000).CGColor;//UIColorFromRGB(0x999999).CGColor;
+    _bgView.layer.shadowColor = [UIColor blackColor].CGColor; //UIColorFromRGB(0x000000).CGColor;//UIColorFromRGB(0x999999).CGColor;
     _bgView.layer.shadowRadius = 12;
     [self addSubview:_bgView];
     
