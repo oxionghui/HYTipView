@@ -60,8 +60,8 @@ static const CGFloat kTextSpacing = 6;
     
     _bgView = [[UIView alloc] init];
     _bgView.layer.cornerRadius = 6;
-    _bgView.backgroundColor = [UIColor colorWithRed:0xff/0xff green:0xee/0xff blue:0x79/0xff alpha:1]; //UIColorFromRGB(0xffee79);
-    _bgView.layer.borderColor = [UIColor colorWithRed:0x6b/0xff green:0x46/0xff blue:0x19/0xff alpha:1].CGColor;//UIColorFromRGB(0x6b4619).CGColor;
+    _bgView.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:238.0f/255.0f blue:121.0f/255.0f alpha:1]; //UIColorFromRGB(0xffee79);
+    _bgView.layer.borderColor = [UIColor colorWithRed:107.0f/255.0f green:70.0f/255.0f blue:25.0f/255.0f alpha:1].CGColor;//UIColorFromRGB(0x6b4619).CGColor;
     _bgView.layer.borderWidth = 1;
     _bgView.layer.shadowOffset = CGSizeMake(2, 4);
     _bgView.layer.shadowOpacity = 1;
