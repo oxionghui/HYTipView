@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/oxionghui/HYTipView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'douyu-iOS' => 'http://gitlab.douyuios.com/douyu-ios' }
+  s.author           = { 'xx' => 'http://gitlab.xx.com/xx' }
   s.source           = { :git => 'https://github.com/oxionghui/HYTipView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -32,9 +32,6 @@ Pod::Spec.new do |s|
   s.platform = :ios, "8.0"
   s.ios.deployment_target = '8.0'
 
-  #s.resource_bundles = {
-   # 'DYLiveBusinessComponent' => ['DYLiveBusinessComponent/Assets/**/*.{storyboard,xcassets,xib,plist}','DYLiveBusinessComponent/Assets/webp/**/*.{webp}']
-  #}
   s.source_files = 'sources/*'
 
 s.xcconfig = {
