@@ -40,5 +40,7 @@ s.xcconfig = {
 
 
 #s.dependency 'Masonry'
+s.dependency 'Masonry', '1.1.0'
+s.dependency 'YYModel', '1.0.4'
 
 end
