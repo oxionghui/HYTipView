@@ -7,6 +7,7 @@
 //
 
 #import "HYTipsView.h"
+#import "UIImage+HYKit.h"
 
 static const CGFloat kTextSpacing = 6;
 
@@ -81,7 +82,7 @@ static const CGFloat kTextSpacing = 6;
     textSize = CGSizeMake(textSize.width + 5, textSize.height + 3);//稍微扩张下
     
     _arrowImageView = [[UIImageView alloc] init];
-    _arrowImageView.image = [UIImage imageNamed:@"tips_arrow"];
+    _arrowImageView.image = [UIImage hy_imageNamed:@"tips_arrow"];
     [self addSubview:_arrowImageView];
     
     //目前还没有包括尖头的大小
