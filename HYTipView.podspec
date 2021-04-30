@@ -32,15 +32,19 @@ Pod::Spec.new do |s|
   s.platform = :ios, "8.0"
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'sources/*'
+  s.source_files = 'HYTipView/Classes/**/*.{h,m}'
 
-s.xcconfig = {
-  'ENABLE_BITCODE' => 'NO'
-}
+  s.resource_bundles = {
+    'HYTipView' => ['HYTipView/Assets/**/*.{storyboard,xcassets,xib,plist,webp}']
+  }
+
+  s.xcconfig = {
+    'ENABLE_BITCODE' => 'NO'
+  }
 
 
-#s.dependency 'Masonry'
-s.dependency 'Masonry', '1.1.0'
-s.dependency 'YYModel', '1.0.4'
+  #s.dependency 'Masonry'
+  s.dependency 'Masonry', '1.1.0'
+  s.dependency 'YYModel', '1.0.4'
 
 end
