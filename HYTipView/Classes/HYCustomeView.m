@@ -6,7 +6,6 @@
 //
 
 #import "HYCustomeView.h"
-#import "Masonry.h"
 
 @interface HYCustomeView ()
 @property (nonatomic, strong) UIView *contentView;
